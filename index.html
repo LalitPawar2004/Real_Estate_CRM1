@@ -1,1869 +1,1047 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/"
+    data-template="vertical-menu-template-free">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Real_Estate_crm</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>CRM</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <a href="#"><img src="logo.png" alt="Logo"></a>
-            </div>
-            <div class="navbar-buttons">
-                <a href="#" class="btn">Sign In</a>
-                <a href="#" class="btn">Register</a>
-            </div>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="z-index: 1000; display: flex; align-items: center;">
+        <div class="container-fluid">
+            <a href="index.html" class="app-brand-link gap-2">
+                <span class="app-brand-logo demo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30px" height="30px"
+                        version="1.1"
+                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        viewBox="0 0 220.31 285.98" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                        <defs>
+                            <style type="text/css">
+                                .fil1 {
+                                    fill: #336EDB
+                                }
 
+                                .fil2 {
+                                    fill: url(#id0)
+                                }
 
-    <main>
-        <div class="main">
-            <div class="breadcrumb">
-                <!-- <nav class="breadcrumb"> -->
-                <a href="#content">Content</a> <span style="font-size: 1.5em;">></span>
-                <a href="#design">Design</a> <span style="font-size: 1.5em;">></span>
-                <a href="#publish">Publish</a>
-                <!-- </nav> -->
-            </div>
+                                .fil3 {
+                                    fill: url(#id1)
+                                }
 
-            <div class="main-1">
-                <div class="main-2">
-                    <div class="template-box">
-                        <div id="carouselExampleCaptions" class="carousel slide">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
+                                .fil0 {
+                                    fill: url(#id2)
+                                }
+                            </style>
+                            <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="21.16" y1="89.95" x2="160.35"
+                                y2="89.95">
+                                <stop offset="0" style="stop-opacity:1; stop-color:#336EDB"></stop>
+                                <stop offset="0.34902" style="stop-opacity:1; stop-color:#3575ED"></stop>
+                                <stop offset="1" style="stop-opacity:1; stop-color:#377DFF"></stop>
+                            </linearGradient>
+                            <linearGradient id="id1" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="38.52"
+                                y1="109.38" x2="220.31" y2="109.38">
+                            </linearGradient>
+                            <linearGradient id="id2" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="-0" y1="72.14"
+                                x2="129.63" y2="72.14">
+                            </linearGradient>
+                        </defs>
+                        <g id="Layer_x0020_1">
+                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                            <g id="_2109711426944">
+                                <path class="fil0"
+                                    d="M19.03 109.87c-5.48,-18.71 -4.97,-34.3 4.53,-50.28 12.94,-21.75 36.41,-35.48 61.73,-36.53 13.13,-0.55 21.01,1.64 32.1,5.52 4.17,-2.32 9.81,-8.3 12.24,-11.29 -44.72,-24.44 -108.09,-1.31 -125.37,47.09 -8.06,22.58 -4.62,53.17 9.86,72.46l73.54 -71.58 5.51 5.93 12.56 -35.59 -35.36 11.91 5.91 7.02 -57.24 55.36z">
+                                </path>
+                                <path class="fil1"
+                                    d="M52.09 240.49l76.76 -0.06c9.38,0.01 12.96,-9.04 7.64,-14.26 -4.02,-3.95 -49.01,-2.15 -56.9,-2.15l-27.49 -0.02c-6.34,0 -10.31,1.01 -10.58,7.58 -0.3,7.16 3.81,8.93 10.58,8.93zm62.73 28.15l-49.71 0.18c5.6,13.86 25.74,23.59 39.67,12.02 4.25,-3.53 8.33,-6.87 10.04,-12.2zm-57.85 -6.49c5.74,1.68 49.16,1.46 59.32,0.99 14.94,-0.69 9.82,-13.87 6.04,-15.88 -3.12,-1.67 -62.23,-1.91 -65.55,0.53 -5.1,3.76 -2.47,10.54 0.18,14.36z">
+                                </path>
+                                <path class="fil2"
+                                    d="M21.16 146.65c0.61,4.52 4.67,10.64 8.02,13.42l112.34 -109.57 6.8 4.64 12.02 -35.3 -35.2 11.95 5.31 7.04 -109.29 107.82z">
+                                </path>
+                                <path class="fil3"
+                                    d="M179.1 50.42l21.58 -21.21 7.29 6.31 12.34 -35.51 -35.81 12.45 5.04 5.47c-44.76,45.12 -89.68,90.05 -134.71,134.9 -11.84,11.59 -16.4,13.08 -16.3,23.58 0.12,13.72 0.08,27.44 0.04,41.16 6.35,1.32 28.53,2.3 32.69,-1.36 3.5,-3.07 2.68,-9.12 -0.3,-11.56 -3.93,-3.23 -11.35,-1.91 -16.58,-2.03 -2.39,-31.73 -1.35,-25.69 17.27,-44.42 10.15,-10.21 79.76,-83 87.58,-86.28 7.87,33.14 -6.12,54.33 -22.79,82.34 -2.71,4.55 -10.1,13.7 -10.21,19.08l-0.06 29.05c-11.27,1.28 -23.24,-0.86 -15.86,14.39 8.6,2.63 21.73,1.74 31.49,1.32l-0.06 -16.45c0.23,-12.9 -2.17,-23.06 3.83,-32.52 19.32,-30.45 44.92,-74.65 25.51,-111l8.02 -7.72z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+            </a>
+            <a class="navbar-brand" href="javascript:void(0)">SiteSoch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" style="display: flex; align-items: center;">
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <button type="button" class="btn btn-outline-primary">Sign In</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="RegistrationPage.html" class="nav-link">
+                            <button type="button" class="btn btn-primary">Sign Up</button>
+                        </a>
+                    </li>
+                    <!-- User dropdown -->
+                    <li class="nav-item">
+                        <a class="nav-link " href="javascript:void(0);" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="avatar avatar-online">
+                                <img src="assets/img/avatars/1.png" alt="" class="w-px-40 h-auto rounded-circle">
                             </div>
-                            <div class="carousel-inner">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="avatar avatar-online">
+                                                <img src="assets/img/avatars/1.png" alt=""
+                                                    class="w-px-40 h-auto rounded-circle">
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <span class="fw-medium d-block">John Doe</span>
+                                            <small class="text-muted">Admin</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bx bx-user me-2"></i>
+                                    <span class="align-middle">My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bx bx-cog me-2"></i>
+                                    <span class="align-middle">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="d-flex align-items-center align-middle">
+                                        <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                                        <span class="flex-grow-1 align-middle ms-1">Billing</span>
+                                        <span
+                                            class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <i class="bx bx-power-off me-2"></i>
+                                    <span class="align-middle">Log Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--/ User -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+
+    <!-- Breadcrumb -->
+    <div class="estate-1" >
+        <div class="col-xl-6" style="width: 60%;">
+            <div class="nav-align-top mb-4">
+                <ul class="nav nav-pills mb-3 nav-fill" role="tablist">
+                    <li class="nav-item">
+                        <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab"
+                            data-bs-target="#navs-pills-justified-home" aria-controls="navs-pills-justified-home"
+                            aria-selected="true">
+                            Content
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                            data-bs-target="#navs-pills-justified-profile" aria-controls="navs-pills-justified-profile"
+                            aria-selected="false">
+                            Design/Setting
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                            data-bs-target="#navs-pills-justified-messages"
+                            aria-controls="navs-pills-justified-messages" aria-selected="false">
+                            Publish
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="navs-pills-justified-home" role="tabpanel">
+                        <!-- Content Section -->
+
+                        <!-- URL Section -->
+
+                        <form action="process_page.php" method="POST">
+                            <label for="url">Enter Page URL:</label><br>
+                            <input type="text" id="url" name="url" placeholder="e.g., my-page-url" required><br>
+                            <button type="submit" value="Create Page" class="btn btn-primary">Create Page</button>
+                        </form>
+                        <br>
+                        <style>
+                            label {
+                                font-weight: bold;
+                            }
+
+                            input[type="text"] {
+                                width: 100%;
+                                padding: 8px;
+                                margin-top: 5px;
+                                margin-bottom: 15px;
+                                border: 1px solid #ccc;
+                                border-radius: 4px;
+                            }
+
+                            input[type="submit"] {
+                                background-color: #333;
+                                color: #fff;
+                                padding: 10px 15px;
+                                border: none;
+                                border-radius: 8px;
+                                cursor: pointer;
+                            }
+
+                            input[type="submit"]:hover {
+                                background-color: #fFF;
+                                /* Light hover background */
+                                color: #333;
+                                border: 2px solid #333;
+                            }
+                        </style>
+
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner mx-auto">
                                 <div class="carousel-item active">
-                                    <img src="final-3.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <div class="breadcrumb-1"><a href="#moblie">Content 1</a></div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="image1.png" class="d-block w-100" alt="Image 1">
+                                        </div>
+                                        <div class="col">
+                                            <img src="image2.png" class="d-block w-100" alt="Image 2">
+                                        </div>
+                                        <div class="col">
+                                            <img src="image3.png" class="d-block w-100" alt="Image 3">
+                                        </div>
+                                        <div class="col">
+                                            <img src="image4.png" class="d-block w-100" alt="Image 4">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="final.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <div class="breadcrumb-1"><a href="#moblie-1">Content 2</a></div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="final-2.png" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <a href="#content">Content 3</a>
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="image12.png" class="d-block w-100" alt="Image 12">
+                                        </div>
+                                        <div class="col">
+                                            <img src="image13.png" class="d-block w-100" alt="Image 13">
+                                        </div>
+                                        <div class="col">
+                                            <img src="image14.png" class="d-block w-100" alt="Image 14">
+                                        </div>
+                                        <div class="col">
+                                            <img src="image15.png" class="d-block w-100" alt="Image 15">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                    </div>
+                        <br>
 
-                    <div class="main-4">
-                        <section id="content">
-                            <h2>Content Section</h2>
-                            <style>
-                                .image_view_type_item {
-                                  cursor: pointer;
-                                }
-                          
-                                .image_view_type_item.selected .image_view_type_card {
-                                  border: 2px solid #007bff;
-                                  /* Highlight color */
-                                  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-                                  /* Optional shadow effect */
-                                }
-                          
-                                .slug_prepend {
-                                  color: var(--secondary-color-1);
-                                }
-                          
-                                .page_template_wrapper {
-                                  display: flex;
-                                  flex-wrap: wrap;
-                                  justify-content: center;
-                                }
-                          
-                                .page_template_card {
-                                  position: relative;
-                                  margin: 10px;
-                                  width: 200px;
-                                  /* Adjust width as needed */
-                                }
-                          
-                                .overlay {
-                                  position: absolute;
-                                  top: 0;
-                                  left: 0;
-                                  width: 100%;
-                                  height: 100%;
-                                  background-color: rgba(0, 0, 0, 0.5);
-                                  display: flex;
-                                  align-items: center;
-                                  justify-content: center;
-                                  opacity: 0;
-                                  transition: opacity 0.3s;
-                                }
-                          
-                                .page_template_card:hover .overlay {
-                                  opacity: 1;
-                                }
-                          
-                                .card_tick {
-                                  color: white;
-                                  font-size: 2rem;
-                                }
-                          
-                                
-                              </style>
-                            </head>
-                          
-                            <body>
-                              <div class="container mt-5 br-2 pb-5">
-                                <div class="mb-4 url_slug_wrapper">
-                                  <h5>
-                                    Your Page URL
-                                    <span class="font-12 text-muted"
-                                      >(Once saved, cannot be changed later)</span
-                                    >
-                                  </h5>
-                                  <div class="">
-                                    <div class="input-group notranslate">
-                                      <div class="input-group-prepend">
-                                        <button
-                                          style="color: var(--secondary-color-1)"
-                                          class="btn btn-default rounded-0 short_url_slug_prepend notranslate slug_prepend"
-                                          type="button"
-                                        >
-                                          linko.page/
-                                        </button>
-                                      </div>
-                                      <input
-                                        type="text"
-                                        class="form-control notranslate"
-                                        placeholder=""
-                                        aria-label=""
-                                        id="short_url_input"
-                                        aria-describedby="basic-addon1"
-                                        value="sfsta1kxbklo"
-                                      />
-                                    </div>
-                                    <span class="font-12 text-muted">*minimum 5 characters required</span>
-                                  </div>
-                                </div>
-                                <!-- <div class="d-flex justify-content-between align-items-center">
-                                  <h5 class="mb-2">
-                                    Page Template
-                                    <span id="template_select_helper" class="font-12 text-muted"
-                                      >(Click on the template you like)</span
-                                    >
-                                  </h5>
-                                  <div class="d-none">
-                                    <a class="btn btn-link" href="#">View All</a>
-                                  </div>
-                                </div>
-                                <div class="container">
-                                  <div class="col-md-12 text-center">
-                                    <div
-                                      id="myCarousel"
-                                      class="carousel slide"
-                                      data-ride="carousel"
-                                      data-interval="4000"
-                                    >
-                                      <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                                        <div class="carousel-item col-md-3">
-                                          <div class="panel panel-default">
-                                            <div class="panel-thumbnail">
-                                              <a href="#" title="image 1" class="thumb">
-                                                <img
-                                                  class="img-fluid w-100 h-full"
-                                                  src="//cdn0070.qrcodechimp.com/images/digital-business-cards/digital-business-card-template-7.png"
-                                                  alt="Digital business card template for the Business Executives"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="carousel-item col-md-3">
-                                          <div class="panel panel-default">
-                                            <div class="panel-thumbnail">
-                                              <a href="#" title="image 3" class="thumb">
-                                                <img
-                                                  class="img-fluid w-100 h-full"
-                                                  src="//cdn0070.qrcodechimp.com/images/digital-business-cards/digital-business-card-template-14.png"
-                                                  alt="Digital business card template for the Marketing Managers"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="carousel-item col-md-3">
-                                          <div class="panel panel-default">
-                                            <div class="panel-thumbnail">
-                                              <a href="#" title="image 4" class="thumb">
-                                                <img
-                                                  class="img-fluid w-100 h-full"
-                                                  src="//cdn0070.qrcodechimp.com/images/digital-business-cards/digital-business-card-template-13.png"
-                                                  alt="Digital business card template for the Realtors"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="carousel-item col-md-3 active">
-                                          <div class="panel panel-default">
-                                            <div class="panel-thumbnail">
-                                              <a href="#" title="image 5" class="thumb">
-                                                <img
-                                                  class="img-fluid w-100 h-full"
-                                                  src="//cdn0070.qrcodechimp.com/images/digital-business-cards/digital-business-card-template-9.png"
-                                                  alt="Digital business card template for the Fashion Designers"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="carousel-item col-md-3">
-                                          <div class="panel panel-default">
-                                            <div class="panel-thumbnail">
-                                              <a href="#" title="image 6" class="thumb">
-                                                <img
-                                                  class="img-fluid w-100 h-full"
-                                                  src="//cdn0070.qrcodechimp.com/images/digital-business-cards/digital-business-card-template-4.png"
-                                                  alt="Digital business card template for the Finance Executives"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="carousel-item col-md-3">
-                                          <div class="panel panel-default">
-                                            <div class="panel-thumbnail">
-                                              <a href="#" title="image 7" class="thumb">
-                                                <img
-                                                  class="img-fluid w-100 h-full"
-                                                  src="//cdn0070.qrcodechimp.com/images/digital-business-cards/digital-business-card-template-17.png"
-                                                  alt="Digital business card template for the Artists"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="carousel-item col-md-3">
-                                          <div class="panel panel-default">
-                                            <div class="panel-thumbnail">
-                                              <a href="#" title="image 8" class="thumb">
-                                                <img
-                                                  class="img-fluid w-100 h-full"
-                                                  src="//cdn0070.qrcodechimp.com/images/digital-business-cards/digital-business-card-template-16.png"
-                                                  alt="Digital business card template for the Physicians"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="carousel-item col-md-3">
-                                          <div class="panel panel-default">
-                                            <div class="panel-thumbnail">
-                                              <a href="#" title="image 2" class="thumb">
-                                                <img
-                                                  class="img-fluid w-100 h-full"
-                                                  src="//cdn0070.qrcodechimp.com/images/digital-business-cards/digital-business-card-template-12.png"
-                                                  alt="Digital business card template for the Sales Executives"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="carousel-item col-md-3">
-                                          <div class="panel panel-default">
-                                            <div class="panel-thumbnail">
-                                              <a href="#" title="image 2" class="thumb">
-                                                <img
-                                                  class="img-fluid w-100 h-full"
-                                                  src="//cdn0070.qrcodechimp.com/images/digital-business-cards/digital-business-card-template-11.png"
-                                                  alt="Digital business card template for the Marketing Executives"
-                                                />
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <a
-                                        class="carousel-control-prev"
-                                        href="#myCarousel"
-                                        role="button"
-                                        data-slide="prev"
-                                      >
-                                        <span
-                                          class="carousel-control-prev-icon"
-                                          aria-hidden="true"
-                                        ></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a
-                                        class="carousel-control-next text-faded"
-                                        href="#myCarousel"
-                                        role="button"
-                                        data-slide="next"
-                                      >
-                                        <span
-                                          class="carousel-control-next-icon"
-                                          aria-hidden="true"
-                                        ></span>
-                                        <span class="sr-only">Next</span>
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div> -->
-                          
-                                <div class="accordion mt-5" id="accordionExample">
-                                  <!-- Accordion Item 1 -->
-                                  <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                      <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn btn-link" type="button">
-                                          Profile Section
-                                        </button>
-                                        <button
-                                          class="btn btn-link"
-                                          type="button"
-                                          data-toggle="collapse"
-                                          data-target="#collapseOne"
-                                          aria-expanded="false"
-                                          aria-controls="collapseOne"
-                                        >
-                                          &uparrow;
-                                        </button>
-                                      </h2>
-                                    </div>
-                          
-                                    <div
-                                      id="collapseOne"
-                                      class="collapse show"
-                                      aria-labelledby="headingOne"
-                                      data-parent="#accordionExample"
-                                    >
-                                      <div class="card-body">
-                                        <div class="qr_page_component_card_body secondary_color show">
-                                          <div class="card-body">
-                                            <div class="row">
-                                              <div class="col-md-12 px-3 mb-3">
-                                                <div class="mb-2">
-                                                  Profile Photo
-                                                  <div class="switchery d-inline">
-                                                    <label class="switch mb-0">
-                                                      <input
-                                                        type="checkbox"
-                                                        checked=""
-                                                        name="enable_pr"
-                                                      />
-                                                      <span class="slider round"></span>
-                                                    </label>
-                                                  </div>
-                                                </div>
-                                                <div class="d-flex img_upload_card_wrapper">
-                                                  <div
-                                                    class="img_uploaded_card selected_img mr-3 pr_img"
-                                                    style="
-                                                      background-image: url('//cdn0070.qrcodechimp.com/images/digitalCard/profilepic.jpg');
-                                                    "
-                                                  ></div>
-                                                  <div
-                                                    class="img_uploaded_card upload_img mr-3 d-flex justify-content-center align-items-center flex-column"
-                                                  >
-                                                    <i class="font-24 icon-file_upload_1 my-2"></i>
-                                                  </div>
-                                                  <input
-                                                    class="d-none"
-                                                    type="file"
-                                                    name="pg_upload_image"
-                                                    accept="image/*"
-                                                  />
-                                                </div>
-                                                <div class="">
-                                                  <span class="text-muted font-12"
-                                                    >(200x200px, 1:1 Ratio)</span
-                                                  >
-                                                </div>
-                                              </div>
-                          
-                                              <div class="col-md-12 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Name</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="name"
-                                                    value="Name"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                          
-                                              <div class="col-md-6 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Heading</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="desc"
-                                                    value="Job Title"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                          
-                                              <div class="col-md-6 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Sub Heading</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="company"
-                                                    value="Company"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                          
-                                              <div class="col-md-12 px-3 mt-2">
-                                                <div class="row mx-0">
-                                                  <div class="mr-2 mb-2">Profile Connect Icons</div>
-                                                  <div class="switchery d-inline">
-                                                    <label class="switch mb-0">
-                                                      <input
-                                                        type="checkbox"
-                                                        checked=""
-                                                        name="contact_shortcut_enable"
-                                                      />
-                                                      <span class="slider round"></span>
-                                                    </label>
-                                                  </div>
-                                                </div>
-                                                <div class="contact_shortcut_container" >
-                                                  <div
-                                                    class="row mx-0 list-group"
-                                                    id="contact_shortcut_container_0"
-                                                  >
-                                                    <!-- Contact Shortcut Items -->
-                                                    <div
-                                                      class="list-group-item subcomponent_sortable_wrapper contact_shortcut_input_wrapper mb-4"
-                                                      data-id="DmfPEM1N1721298295616"
-                                                    >
-                                                      <div class="action_buttons">
-                                                        <a class="btn btn_delete_pro_card"
-                                                          ><i class="text-danger icon-delete_1"></i
-                                                        ></a>
-                                                        <a class="btn handle-contact"
-                                                          ><i class="icon-drag_1"></i
-                                                        ></a>
-                                                      </div>
-                                                      <div class=""></div>
-                                                      <div class="input-group my-3">
-                                                        <div class="input-group-prepend">
-                                                          <select
-                                                            class="form-control select2_no_search profile_contact_info select2-hidden-accessible"
-                                                            name="type"
-                                                            tabindex="-1"
-                                                            aria-hidden="true"
-                                                          >
-                                                            <option value="mobile">Mobile</option>
-                                                            <option value="email" selected="">
-                                                              Email
-                                                            </option>
-                                                            <option value="sms">SMS</option>
-                                                            <option value="location">Location</option>
-                                                            <option value="wechat">WeChat</option>
-                                                            <option value="whatsapp">Whatsapp</option>
-                                                            <option value="fax">Fax</option>
-                                                            <option value="tel">Telephone</option>
-                                                          </select>
-                                                        </div>
-                                                        <input
-                                                          type="text"
-                                                          class="form-control"
-                                                          name="value"
-                                                          value="youremail@domain.com"
-                                                          placeholder="Email"
-                                                        />
-                                                      </div>
-                                                    </div>
-                                                    <!-- Additional Contact Shortcut Items -->
-                                                  </div>
-                                                  <div class="row mx-0 mt-2">
-                                                    <div class="dropup">
-                                                      <button
-                                                        class="btn btn-outline-primary dropdown-toggle"
-                                                        type="button"
-                                                        id="btn_add_profile_component"
-                                                        data-toggle="dropdown"
-                                                        aria-haspopup="true"
-                                                        aria-expanded="false"
-                                                      >
-                                                        <i class="icon-add_1"></i>Add More
-                                                      </button>
-                                                      <div
-                                                        class="dropdown-menu add_profile_component"
-                                                        aria-labelledby="btn_add_profile_component"
-                                                      >
-                                                        <a
-                                                          class="dropdown-item"
-                                                          href=""
-                                                          data-type="mobile"
-                                                          >Mobile</a
-                                                        >
-                                                        <a class="dropdown-item" href="" data-type="email"
-                                                          >Email</a
-                                                        >
-                                                        <a class="dropdown-item" href="" data-type="sms"
-                                                          >SMS</a
-                                                        >
-                                                        <a
-                                                          class="dropdown-item"
-                                                          href=""
-                                                          data-type="location"
-                                                          >Location</a
-                                                        >
-                                                        <a
-                                                          class="dropdown-item"
-                                                          href=""
-                                                          data-type="wechat"
-                                                          >WeChat</a
-                                                        >
-                                                        <a
-                                                          class="dropdown-item"
-                                                          href=""
-                                                          data-type="whatsapp"
-                                                          >Whatsapp</a
-                                                        >
-                                                        <a class="dropdown-item" href="" data-type="fax"
-                                                          >Fax</a
-                                                        >
-                                                        <a class="dropdown-item" href="" data-type="tel"
-                                                          >Telephone</a
-                                                        >
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                      <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn btn-link" type="button">Contact Us</button>
-                                        <button
-                                          class="btn btn-link"
-                                          type="button"
-                                          data-toggle="collapse"
-                                          data-target="#collapseTwo"
-                                          aria-expanded="true"
-                                          aria-controls="collapseOne"
-                                        >
-                                          &uparrow;
-                                        </button>
-                                      </h2>
-                                    </div>
-                          
-                                    <div
-                                      id="collapseTwo"
-                                      class="collapse show"
-                                      aria-labelledby="headingOne"
-                                      data-parent="#accordionExample"
-                                    >
-                                      <div class="card">
-                                        <div class="card-body">
-                                          <div class="row">
-                                            <div class="col-md-12 px-3">
-                                              <div class="mb-2 d-flex">
-                                                <span class="mr-2">Title</span>
-                                              </div>
-                                              <div class="d-flex">
-                                                <input
-                                                  class="form-control"
-                                                  autocomplete="off"
-                                                  name="contact_title"
-                                                  value="Contact Us"
-                                                  type="text"
-                                                  placeholder=""
-                                                />
-                                              </div>
-                                              <span id=""></span>
-                                            </div>
-                          
-                                            <div class="col-md-12 px-3 mb-3">
-                                              <div class="mb-2">
-                                                <span class="text-muted font-12">1:1 Ratio</span>
-                                              </div>
-                                              <div class="d-flex img_upload_card_wrapper">
-                                                <div
-                                                  class="img_uploaded_card selected_img mr-3"
-                                                  style="
-                                                    background-image: url('//cdn0070.qrcodechimp.com/images/digitalCard/contactus.png');
-                                                  "
-                                                ></div>
-                                                <div
-                                                  class="img_uploaded_card upload_img mr-3 d-flex justify-content-center align-items-center flex-column"
-                                                >
-                                                  <i class="font-24 icon-file_upload_1 my-2"></i>
-                                                </div>
-                                                <input
-                                                  class="d-none"
-                                                  type="file"
-                                                  name="pg_upload_image"
-                                                  accept="image/*"
-                                                />
-                                              </div>
-                                            </div>
-                          
-                                            <div class="col-md-12 px-3 mt-2">
-                                              <div class="row mx-0">
-                                                <div class="mr-2 mb-2">Floating button</div>
-                                                <div class="switchery d-inline">
-                                                  <label class="switch mb-0">
-                                                    <input
-                                                      type="checkbox"
-                                                      checked=""
-                                                      name="floating_button_enable"
-                                                    />
-                                                    <span class="slider round"></span>
-                                                  </label>
-                                                </div>
-                                              </div>
-                          
-                                              <div class="row mx-0 gray_card align-items-center">
-                                                <div class="col-md-6 px-3">
-                                                  <div class="mb-2 d-flex">
-                                                    <span class="mr-2">Button Text</span>
-                                                  </div>
-                                                  <div class="d-flex">
-                                                    <input
-                                                      class="form-control"
-                                                      autocomplete="off"
-                                                      name="floating_button_label"
-                                                      value="Add to Contact"
-                                                      type="text"
-                                                      placeholder=""
-                                                    />
-                                                  </div>
-                                                  <span id=""></span>
-                                                </div>
-                          
-                                                <div class="col-md-6 d-flex justify-content-end">
-                                                  <button
-                                                    class="btn bg-light floating_contact_button"
-                                                    type="button"
-                                                  >
-                                                    <span class="floating_contact_button_text"
-                                                      >Add to Contact</span
-                                                    >
-                                                    <span class="add_contact_icon"
-                                                      ><i class="icon-add_1"></i
-                                                    ></span>
-                                                  </button>
-                                                </div>
-                                              </div>
-                                            </div>
-                          
-                                            <div class="col-md-12 px-3 mt-2">
-                                              <div
-                                                class="row mx-0 list-group mt-5"
-                                                id="contact_info_container_2"
-                                              >
-                                                <!-- Contact Info Items Here -->
-                                                <div
-                                                  class="list-group-item contact_info_input_wrapper subcomponent_sortable_wrapper mb-5"
-                                                  data-type="number"
-                                                  data-id="hI4DTCsg1721298295619"
-                                                >
-                                                  <div class="contact_info_input_title">
-                                                    Contact Number
-                                                  </div>
-                                                  <div class="action_buttons">
-                                                    <a class="btn btn_delete_pro_card"
-                                                      ><i class="text-danger icon-delete_1"></i
-                                                    ></a>
-                                                    <a class="btn handle-contact_info"
-                                                      ><i class="icon-drag_1"></i
-                                                    ></a>
-                                                  </div>
-                                                  <div class="row">
-                                                    <div class="col-md-6 px-3">
-                                                      <div class="mb-2 d-flex">
-                                                        <span class="mr-2">Label</span>
-                                                      </div>
-                                                      <div class="d-flex">
-                                                        <input
-                                                          class="form-control"
-                                                          autocomplete="off"
-                                                          name="title"
-                                                          value="Call Us"
-                                                          type="text"
-                                                          placeholder=""
-                                                        />
-                                                      </div>
-                                                      <span id=""></span>
-                                                    </div>
-                                                    <div class="col-md-6 px-3">
-                                                      <div class="mb-2 d-flex">
-                                                        <span class="mr-2">Number</span>
-                                                      </div>
-                                                      <div class="d-flex">
-                                                        <input
-                                                          class="form-control"
-                                                          autocomplete="off"
-                                                          name="number"
-                                                          value="+91 9876543210"
-                                                          type="text"
-                                                          placeholder=""
-                                                        />
-                                                      </div>
-                                                      <span id=""></span>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                          
-                                                <!-- Add more contact info items here as needed -->
-                                              </div>
-                          
-                                              <div class="row mx-0 mt-2">
-                                                <div class="dropup">
-                                                  <button
-                                                    class="btn btn-outline-primary dropdown-toggle"
-                                                    type="button"
-                                                    id="btn_add_contact_component"
-                                                    data-toggle="dropdown"
-                                                    aria-haspopup="true"
-                                                    aria-expanded="false"
-                                                  >
-                                                    <i class="icon-add_1"></i>Add
-                                                  </button>
-                                                  <div
-                                                    class="dropdown-menu add_contact_component"
-                                                    aria-labelledby="btn_add_contact_component"
-                                                  >
-                                                    <a class="dropdown-item" href="#" data-type="number"
-                                                      >Number</a
-                                                    >
-                                                    <a class="dropdown-item" href="#" data-type="email"
-                                                      >Email</a
-                                                    >
-                                                    <a class="dropdown-item" href="#" data-type="address"
-                                                      >Address</a
-                                                    >
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                          
-                                  <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                      <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn btn-link" type="button">Pricing</button>
-                                        <button
-                                          class="btn btn-link"
-                                          type="button"
-                                          data-toggle="collapse"
-                                          data-target="#collapseNine"
-                                          aria-expanded="true"
-                                          aria-controls="collapseOne"
-                                        >
-                                          &uparrow;
-                                        </button>
-                                      </h2>
-                                    </div>
-                          
-                                    <div
-                                      id="collapseNine"
-                                      class="collapse show"
-                                      aria-labelledby="headingOne"
-                                      data-parent="#accordionExample"
-                                    >
-                          
-                                    <div class="p-3 pb-md-4 mx-auto">
-                                      <p class="text-start">Pricing</p>
-                                      <p class="fs-5 text-body-secondary">Why you should consider Wellington at Pride World City? <br>
-                                        <li>Integrated with 110 plus amenities.</li>
-                                        <li>Provides trendy co working lounge</li>
-                                        <li>7 acres of podium amenities and aesthetically designed Marina</li></p>
-                                    </div>
-                                    <div class="container">
-                                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mx-1">
-                                      <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm">
-                                          <div class="card-header py-3">
-                                            <p class="my-0 fw-normal">710.85 sq.ft.
-                                              (66.04 sq.m.) <br>
-                                              Carpet Area | 2 BHK</p>
-                                          </div>
-                                          <div class="card-body">
-                                            <h1 class="card-title pricing-card-title">$69.42<small class="text-body-secondary fw-light"></small></h1>
-                                            <ul class="list-unstyled mt-3 mb-4">
-                                              <li>Under Construction</li>
-                                              <li>Dec ‘25 possession</li>
-                                            </ul>
-                                            <button type="button" class="w-100 btn btn-lg btn-primary">Sign up</button>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm">
-                                          <div class="card-header py-3">
-                                            <p class="my-0 fw-normal">710.42 sq.ft.
-                                              (66 sq.m.) <br>
-                                              Carpet Area | 2 BHK</p>
-                                          </div>
-                                          <div class="card-body">
-                                            <h1 class="card-title pricing-card-title">$97.53<small class="text-body-secondary fw-light"></small></h1>
-                                            <ul class="list-unstyled mt-3 mb-4">
-                                              <li>Under Construction</li>
-                                              <li>Dec ‘25 possession</li>
-                                            </ul>
-                                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm ">
-                                          <div class="card-header py-3 text-bg-primary ">
-                                            <p class="my-0 fw-normal">780 sq.ft.
-                                              (72.46 sq.m.) <br>
-                                              Carpet Area | 2 BHK</p>
-                                          </div>
-                                          <div class="card-body">
-                                            <h1 class="card-title pricing-card-title">$78.29<small class="text-body-secondary fw-light"></small></h1>
-                                            <ul class="list-unstyled mt-3 mb-4">
-                                              <li>Under Construction</li>
-                                              <li>Dec ‘25 possession</li>
-                                            </ul>
-                                            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                    </div>
-                          
-                                  <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                      <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn btn-link" type="button">Heading & Text</button>
-                                        <button
-                                          class="btn btn-link"
-                                          type="button"
-                                          data-toggle="collapse"
-                                          data-target="#collapseThird"
-                                          aria-expanded="true"
-                                          aria-controls="collapseOne"
-                                        >
-                                          &uparrow;
-                                        </button>
-                                      </h2>
-                                    </div>
-                          
-                                    <div
-                                      id="collapseThird"
-                                      class="collapse show"
-                                      aria-labelledby="headingOne"
-                                      data-parent="#accordionExample"
-                                    >
-                                      <div class="card">
-                                        <div class="card-body">
-                                          <div class="row">
-                                            <div class="col-md-12 px-3">
-                                              <div class="mb-2 d-flex">
-                                                <span class="mr-2">Title</span>
-                                              </div>
-                                              <div class="d-flex">
-                                                <input
-                                                  class="form-control"
-                                                  autocomplete="off"
-                                                  name="title"
-                                                  value="Wellington at Pride World City "
-                                                  type="text"
-                                                  placeholder=""
-                                                />
-                                              </div>
-                                              <span id=""></span>
-                                            </div>
-                          
-                                            <div class="col-md-12 px-3">
-                                              <div class="mb-2 mt-3">Description</div>
-                                              <div class="d-flex">
-                                                <div class="accordion-body">
-                                                  <strong></strong>
-                                                  <p class="description ">
-                                                    Embark on a journey where every detail is meticulously crafted to perfection. Our direct advisory
-                                                    platform is your guide, ensuring a seamless experience from exploration to ownership. With projects
-                                                    registered under RERA, we assure transparency and accountability at every turn.
-                                      
-                                                    At Avalon Residency, we don't just build homes; we create sanctuaries where luxury transcends mere
-                                                    structures. Partnering with The Balwa Group and A2O Realty, "An Arif Fazlani Venture," we redefine
-                                                    urban living, blending opulence with eco-consciousness.
-                                      
-                                                    Imagine waking up to breathtaking views from two towering skyscrapers, designed with elegance and
-                                                    sophistication. Step onto your spacious balcony, an oasis in the sky, inviting you to soak in the
-                                                    beauty of the surrounding landscape.
-                                      
-                                                    Choose from an array of spacious options, including 2+2 and 3+3 BHKs, each meticulously designed to
-                                                    cater to your every need. For those seeking unparalleled grandeur, explore our beautiful duplexes
-                                                    and penthouses, where luxury knows no bounds.
-                                      
-                                                    Experience the epitome of premium living at Avalon Residency. Schedule your visit now and let us
-                                                    guide you towards your dream home.
-                                                  </p>
-                          
-                                                  <li><strong>Bedrooms:</strong> 2 Beds</li>
-                                      <li><strong>Bathrooms:</strong> 2 Baths</li>
-                                      <li><strong>Floors:</strong> 2</li>
-                                      <li><strong>Property Type:</strong> New Launch</li>
-                          
-                                      <div class="property-image">
-                                        <img src="image-3.jpg" width="400"
-                                        height="400"
-                                        class="img-fluid mr-4" alt="Avalon Residency">
-                                        <img src="image-4.jpg" width="400"
-                                        height="400"
-                                        class="img-fluid" alt="Avalon Residency">
-                                      </div>
-                                    </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                      <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn btn-link" type="button">Images</button>
-                                        <button
-                                          class="btn btn-link"
-                                          type="button"
-                                          data-toggle="collapse"
-                                          data-target="#collapseFourth"
-                                          aria-expanded="true"
-                                          aria-controls="collapseOne"
-                                        >
-                                          &uparrow;
-                                        </button>
-                                      </h2>
-                                    </div>
-                          
-                                    <div
-                                      id="collapseFourth"
-                                      class="collapse show"
-                                      aria-labelledby="headingOne"
-                                      data-parent="#accordionExample"
-                                    >
-                                      <div class="card-body">
-                                        <div class="row">
-                                          <div class="col-md-12 title_desc_wrapper">
-                                            <div class="row mx-0">
-                                              <div class="mr-2 mb-2">Title, Description</div>
-                                              <div class="switchery d-inline">
-                                                <label class="switch mb-0">
-                                                  <input type="checkbox" name="header_enable" />
-                                                  <span class="slider round"></span>
-                                                </label>
-                                              </div>
-                                            </div>
-                                            <div
-                                              class="row mx-0 title_desc_wrapper_input gray_card mb-4"
-                                              style="display: none"
-                                            >
-                                              <div class="col-md-12 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Title</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="title"
-                                                    value="Heading Text"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                          
-                                              <div class="col-md-12 px-3">
-                                                <div class="mb-2">Description</div>
-                                                <div class="d-flex">
-                                                  <textarea class="form-control" name="desc" rows="4">
-                          Heading Description</textarea
-                                                  >
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                          
-                                          <div class="col-md-12 mb-2">
-                                            <div class="row mx-0">
-                                              <div class="mr-2 mb-2">
-                                                View Type <br>
-                                                Images that convince you :
-                                                <span
-                                                  class="font-12 text-muted bulk_notes"
-                                                  style="display: none"
-                                                  ></span
-                                                >
-                                              </div>
-                                            </div>
-                                            <div class="row mx-0 d-flex image_view_type_wrapper">
-                                              <div class="image_view_type_item">
-                                                <div
-                                                  class="image_view_type_card selected mr-4"
-                                                  data-type="list"
-                                                >
-                                                  <img
-                                                    src="image-7.jpg"
-                                                    width="400"
-                                                    height="300"
-                                                    class="img-fluid"
-                                                  />
-                                                </div>
-                                                <div class="text-center mt-1"></div>
-                                              </div>
-                                              <div class="image_view_type_item">
-                                                <div class="image_view_type_card mr-4" data-type="grid_1">
-                                                  <img 
-                                                    src="image-10.jpg"
-                                                    width="400"
-                                                    height="300"
-                                                    class="img-fluid"
-                                                  />
-                                                </div>
-                                                <div class="text-center mt-1"></div>
-                                              </div>
-                                              <div class="image_view_type_item">
-                                                <div class="image_view_type_card mr-4" data-type="grid_1">
-                                                  <img 
-                                                    src="image-2.jpg"
-                                                    width="400"
-                                                    height="300"
-                                                    class="img-fluid"
-                                                  />
-                                                </div>
-                                                <div class="text-center mt-1"></div>
-                                              </div>
-                                              <div class="image_view_type_item">
-                                                <div class="image_view_type_card" data-type="grid_2">
-                                                  <img src="image-1.jpg"
-                                                    width="400"
-                                                    height="300"
-                                                    class="img-fluid"
-                                                  />
-                                                </div>
-                                                <div class="text-center mt-1"></div>
-                                              </div>
-                                            </div>
-                                          </div>
-                          
-                                          <div class="col-md-12 px-3 mb-3">
-                                            <div class="mb-3">
-                                              Photos
-                                              <span class="text-muted font-12"
-                                                >(600x600px, 1:1 or 4:5 Ratio)</span
-                                              >
-                                            </div>
-                                            <div class="img_upload_card_wrapper">
-                                              <div class="images_grid_wrapper" id="images_grid_3">
-                                                <!-- Existing images cards here -->
-                                              </div>
-                                              <div
-                                                class="img_uploaded_card upload_imgs mr-3 d-flex justify-content-center align-items-center"
-                                              >
-                                                <i class="font-24 icon-file_upload_1"></i>
-                                              </div>
-                                              <input
-                                                class="d-none"
-                                                type="file"
-                                                name="pg_upload_images"
-                                                accept="image/*"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                          
-                                  <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                      <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn btn-link" type="button">Location</button>
-                                        <button
-                                          class="btn btn-link"
-                                          type="button"
-                                          data-toggle="collapse"
-                                          data-target="#collapseEight"
-                                          aria-expanded="true"
-                                          aria-controls="collapseOne"
-                                        >
-                                          &uparrow;
-                                        </button>
-                                      </h2>
-                                    </div>
-                          
-                                    <div
-                                      id="collapseEight"
-                                      class="collapse show"
-                                      aria-labelledby="headingOne"
-                                      data-parent="#accordionExample"
-                                    >
-                                    <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample" style="">
-                                      <div class="accordion-body">
-                                        <p class="p-3">Aryabhatta college,University of Delhi, Plot No 5, Benito Juarez Marg, South Campus, Anand
-                                          Niketan,
-                                          New Delhi,
-                                          Delhi 110021 :</p>
-                                        <br>
-                                        <div class="col-md mt-1">
-                                          <div class="map mt-0 p-3">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.7041872015975!2d77.1585344752273!3d28.578644275694188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02ba9bcb0b23%3A0x17699e9de4def852!2sAryabhatta%20College%2C%20University%20Of%20Delhi!5e0!3m2!1sen!2sin!4v1695356662588!5m2!1sen!2sin" allowfullscreen="" width="800"
-                                            height="900"
-                                            class="img-fluid" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                                            </iframe>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    </div>
-                          
-                          
-                                  <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                      <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn btn-link" type="button">
-                                          Password Protection
-                                        </button>
-                                        <button
-                                          class="btn btn-link"
-                                          type="button"
-                                          data-toggle="collapse"
-                                          data-target="#collapseFifth"
-                                          aria-expanded="true"
-                                          aria-controls="collapseOne"
-                                        >
-                                          &uparrow;
-                                        </button>
-                                      </h2>
-                                    </div>
-                                    <div
-                                      id="collapseFifth"
-                                      class="collapse show"
-                                      aria-labelledby="headingOne"
-                                      data-parent="#accordionExample"
-                                    >
-                                      <div class="card-body">
-                                        <div class="row">
-                                          <!-- Make this page password protected -->
-                                          <div class="col-md-12 mb-4">
-                                            <div class="row mx-0 align-items-center">
-                                              <div class="mr-2 mb-3">
-                                                Make this page password protected
-                                              </div>
-                                              <div class="switchery d-inline">
-                                                <label class="switch mb-0">
-                                                  <input type="checkbox" name="page_protection_enable" />
-                                                  <span class="slider round"></span>
-                                                </label>
-                                              </div>
-                                            </div>
-                                          </div>
-                          
-                                          <!-- Make contact information password protected -->
-                                          <div class="col-md-12 mb-4">
-                                            <div class="row mx-0 align-items-center">
-                                              <div class="mr-2 mb-2">
-                                                Make contact information password protected
-                                              </div>
-                                              <div class="switchery d-inline">
-                                                <label class="switch mb-0">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="contact_protection_enable"
-                                                  />
-                                                  <span class="slider round"></span>
-                                                </label>
-                                              </div>
-                                            </div>
-                                            <div class="gray_card pl-4 contact_protect">
-                                              <div
-                                                class="custom-control custom-checkbox custom-control-inline"
-                                              >
-                                                <input
-                                                  type="checkbox"
-                                                  id="ct_pr_email_6"
-                                                  class="custom-control-input"
-                                                  name="email"
-                                                  checked=""
-                                                />
-                                                <label class="custom-control-label" for="ct_pr_email_6"
-                                                  >Email</label
-                                                >
-                                              </div>
-                                              <div
-                                                class="custom-control custom-checkbox custom-control-inline"
-                                              >
-                                                <input
-                                                  type="checkbox"
-                                                  id="ct_pr_number_6"
-                                                  class="custom-control-input"
-                                                  name="number"
-                                                  checked=""
-                                                />
-                                                <label class="custom-control-label" for="ct_pr_number_6"
-                                                  >Number</label
-                                                >
-                                              </div>
-                                              <div
-                                                class="custom-control custom-checkbox custom-control-inline"
-                                              >
-                                                <input
-                                                  type="checkbox"
-                                                  id="ct_pr_address_6"
-                                                  class="custom-control-input"
-                                                  name="address"
-                                                  checked=""
-                                                />
-                                                <label class="custom-control-label" for="ct_pr_address_6"
-                                                  >Address</label
-                                                >
-                                              </div>
-                                            </div>
-                                          </div>
-                          
-                                          <!-- Title, Description -->
-                                          <div class="col-md-12 mb-4">
-                                            <div class="row mx-0 align-items-center">
-                                              <div class="mr-2 mb-2">Title, Description</div>
-                                              <div class="switchery d-inline">
-                                                <label class="switch mb-0">
-                                                  <input
-                                                    type="checkbox"
-                                                    checked=""
-                                                    name="header_enable"
-                                                  />
-                                                  <span class="slider round"></span>
-                                                </label>
-                                              </div>
-                                            </div>
-                                            <div class="row mx-0 title_desc_wrapper_input gray_card mb-4">
-                                              <div class="col-md-12 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Title</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="title"
-                                                    value="Heading Text"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                                              <div class="col-md-12 px-3">
-                                                <div class="mb-2">Description</div>
-                                                <div class="d-flex">
-                                                  <textarea class="form-control" name="desc" rows="4">
-                          Heading Description</textarea
-                                                  >
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                          
-                                          <!-- Enable Username -->
-                                          <div class="col-md-12 mb-4">
-                                            <div class="row mx-0 align-items-center gray_card">
-                                              <div class="col-md-12 d-flex">
-                                                <div class="mr-2 mb-3">Enable Username</div>
-                                                <div class="switchery d-inline">
-                                                  <label class="switch mb-0">
-                                                    <input
-                                                      type="checkbox"
-                                                      checked=""
-                                                      name="username_enable"
-                                                    />
-                                                    <span class="slider round"></span>
-                                                  </label>
-                                                </div>
-                                              </div>
-                                              <div class="col-md-6 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Label</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="username_label"
-                                                    value="Username"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                                              <div class="col-md-6 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Value</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="username_value"
-                                                    value="Login Id"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                                              <div class="col-md-12 d-flex">
-                                                <div class="mr-2 my-2">Password</div>
-                                              </div>
-                                              <div class="col-md-6 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Label</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="password_label"
-                                                    value="Password"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                                              <div class="col-md-6 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Value</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="password_value"
-                                                    value="12345"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                                              <div class="col-md-12 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Button Label</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="button_label"
-                                                    value="Login"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                      <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn btn-link" type="button">Links</button>
-                                        <button
-                                          class="btn btn-link"
-                                          type="button"
-                                          data-toggle="collapse"
-                                          data-target="#collapseSixth"
-                                          aria-expanded="true"
-                                          aria-controls="collapseOne"
-                                        >
-                                          &uparrow;
-                                        </button>
-                                      </h2>
-                                    </div>
-                                    <div
-                                      id="collapseSixth"
-                                      class="collapse show"
-                                      aria-labelledby="headingOne"
-                                      data-parent="#accordionExample"
-                                    >
-                                      <div class="card-body">
-                                        <div class="row">
-                                          <!-- Title, Description Section -->
-                                          <div class="col-md-12 title_desc_wrapper">
-                                            <div class="row mx-0 align-items-center">
-                                              <div class="mr-2 mb-2">Title, Description</div>
-                                              <div class="switchery d-inline">
-                                                <label class="switch mb-0">
-                                                  <input
-                                                    type="checkbox"
-                                                    checked=""
-                                                    name="header_enable"
-                                                  />
-                                                  <span class="slider round"></span>
-                                                </label>
-                                              </div>
-                                            </div>
-                                            <div class="row mx-0 title_desc_wrapper_input gray_card mb-4">
-                                              <div class="col-md-12 px-3">
-                                                <div class="mb-2 d-flex">
-                                                  <span class="mr-2">Title</span>
-                                                </div>
-                                                <div class="d-flex">
-                                                  <input
-                                                    class="form-control"
-                                                    autocomplete="off"
-                                                    name="title"
-                                                    value="Web Links"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
-                                                <span id=""></span>
-                                              </div>
-                                              <div class="col-md-12 px-3">
-                                                <div class="mb-2">Description</div>
-                                                <div class="d-flex">
-                                                  <textarea class="form-control" name="desc" rows="4">
-                          Description</textarea
-                                                  >
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                          
-                                          <!-- Web Link Items -->
-                                          <div class="col-md-12 px-3">
-                                            <div
-                                              class="row mx-0 list-group mt-3"
-                                              id="web_link_container_5"
-                                            >
-                                              <div
-                                                class="list-group-item web_link_input_wrapper subcomponent_sortable_wrapper mb-4"
-                                                data-id="k33u6R6f1721319413858"
-                                              >
-                                                <div class="action_buttons">
-                                                  <a class="btn btn_delete_pro_card"
-                                                    ><i class="text-danger icon-delete_1"></i
-                                                  ></a>
-                                                  <a class="btn handle-web-link"
-                                                    ><i class="icon-drag_1"></i
-                                                  ></a>
-                                                </div>
-                                                <div class=""></div>
-                                                <div class="row">
-                                                  <div class="col-md-12 px-3">
-                                                    <div class="mb-2 d-flex">
-                                                      <span class="mr-2">Link</span>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                      <input
-                                                        class="form-control"
-                                                        autocomplete="off"
-                                                        name="url"
-                                                        value="https://www.yourdomain.com"
-                                                        type="text"
-                                                        placeholder=""
-                                                      />
-                                                    </div>
-                                                    <span id=""></span>
-                                                  </div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-md-12 px-3 mb-3">
-                                                    <div class="mb-2"></div>
-                                                    <div class="d-flex img_upload_card_wrapper">
-                                                      <div
-                                                        class="img_uploaded_card selected_img mr-3"
-                                                        style="
-                                                          background-image: url('//cdn0070.qrcodechimp.com/images/digitalCard/weblink.png');
-                                                        "
-                                                      ></div>
-                                                      <div
-                                                        class="img_uploaded_card upload_img mr-3 d-flex justify-content-center align-items-center flex-column"
-                                                      >
-                                                        <i class="font-24 icon-file_upload_1 my-2"></i>
-                                                        <span class="text-muted font-12">1:1 Ratio</span>
-                                                      </div>
-                                                      <input
-                                                        class="d-none"
-                                                        type="file"
-                                                        name="pg_upload_image"
-                                                        accept="image/*"
-                                                      />
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-md-6 px-3">
-                                                    <div class="mb-2 d-flex">
-                                                      <span class="mr-2">Title</span>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                      <input
-                                                        class="form-control"
-                                                        autocomplete="off"
-                                                        name="title"
-                                                        value="Title"
-                                                        type="text"
-                                                        placeholder=""
-                                                      />
-                                                    </div>
-                                                    <span id=""></span>
-                                                  </div>
-                                                  <div class="col-md-6 px-3">
-                                                    <div class="mb-2 d-flex">
-                                                      <span class="mr-2">Subtitle</span>
-                                                    </div>
-                                                    <div class="d-flex align-items-center">
-                                                      <div class="switchery d-inline">
-                                                        <label class="switch mb-0">
-                                                          <input
-                                                            type="checkbox"
-                                                            checked=""
-                                                            name="subtitle_enable"
-                                                          />
-                                                          <span class="slider round"></span>
-                                                        </label>
-                                                      </div>
-                                                      <input
-                                                        class="form-control"
-                                                        autocomplete="off"
-                                                        name="subtitle"
-                                                        value="Sub Title"
-                                                        type="text"
-                                                        placeholder=""
-                                                      />
-                                                    </div>
-                                                    <span id=""></span>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="row mx-0 mt-2">
-                                              <button class="btn btn-outline-primary btn_add_web_link">
-                                                <i class="icon-add_1"></i>Add Link
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                          
-                          
-                                   <div class="dropup d-flex justify-content-center mt-5 mb-3">
-                                  <button class="btn btn-primary dropdown-toggle" type="button" id="btn_add_qr_component" data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-plus mr-2"></i> Add Component
-                                  </button>
-                                  <ul class="dropdown-menu add_qr_component href="btn_add_qr_component"" aria-labelledby="btn_add_qr_component">
-                                      <li><a class="dropdown-item" href="#" data-type="text_desc">Heading + Text</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="web_links">Links</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="social_link">Social Links</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="button">Button</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="video">Video</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="images">Images</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="image_gallery">Images + Links</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="pdf_gallery">PDF Gallery</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="custom_fields">Other Details</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="business_hours">Business Hours</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="team">Team</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="testimonial">Testimonial</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="products">Products</a></li>
-                                      <li><a class="dropdown-item" href="#" data-type="image_text">Image + Text</a></li>
-                                  </ul>
-                              </div>
-                              
-                              
-                          
-                                  <!-- <div class="container d-flex justify-content-center">
-                                          <div class="dropdown">
-                                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Add Component
-                                              </button>
-                                              <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Heading + Text</a></li>
-                                                <li><a class="dropdown-item" href="#">Links</a></li>
-                                                <li><a class="dropdown-item" href="#">Social Links</a></li>
-                                                <li><a class="dropdown-item" href="#">Button</a></li>
-                                                <li><a class="dropdown-item" href="#">Video</a></li>
-                                                <li><a class="dropdown-item" href="#">Images</a></li>
-                                                <li><a class="dropdown-item" href="#">Images + Links</a></li>
-                                                <li><a class="dropdown-item" href="#">PDF Gallery</a></li>
-                                                <li><a class="dropdown-item" href="#">Other Details</a></li>
-                                                <li><a class="dropdown-item" href="#">Business Hours</a></li>
-                                                <li><a class="dropdown-item" href="#">Team</a></li>
-                                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
-                                                <li><a class="dropdown-item" href="#">Products</a></li>
-                                                <li><a class="dropdown-item" href="#">Image + Text</a></li>
-                                              </ul>
-                                            </div>
-                                      </div> -->
-                                </div>
-                              </div>
-                              <!-- Bootstrap JS and dependencies -->
-                              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-                              <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-                              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-                              <script>
-                                $("#myCarousel").on("slide.bs.carousel", function (e) {
-                                  var $e = $(e.relatedTarget);
-                                  var idx = $e.index();
-                                  var itemsPerSlide = 4;
-                                  var totalItems = $(".carousel-item").length;
-                          
-                                  if (idx >= totalItems - (itemsPerSlide - 1)) {
-                                    var it = itemsPerSlide - (totalItems - idx);
-                                    for (var i = 0; i < it; i++) {
-                                      // append slides to end
-                                      if (e.direction == "left") {
-                                        $(".carousel-item").eq(i).appendTo(".carousel-inner");
-                                      } else {
-                                        $(".carousel-item").eq(0).appendTo(".carousel-inner");
-                                      }
-                                    }
-                                  }
-                                });
-                          
-                                $("#myCarousel").carousel({
-                                  interval: 2000,
-                                });
-                          
-                                $(document).ready(function () {
-                                  /* show lightbox when clicking a thumbnail */
-                                  $("a.thumb").click(function (event) {
-                                    event.preventDefault();
-                                    var content = $(".modal-body");
-                                    content.empty();
-                                    var title = $(this).attr("title");
-                                    $(".modal-title").html(title);
-                                    content.html($(this).html());
-                                    $(".modal-profile").modal({ show: true });
-                                  });
-                                });
-                              </script>
-                          
-                            </body>
-                          </html>
-                          
-                        </section>
 
-                        <section id="design" style="display: none;">
-                            <h2>Design Section</h2>
-                            <div class="accordion">
-                                <div class="accordion-item">
-                                    <div class="accordion-header" onclick="toggleAccordion(this)">
-                                        <h3>Colors</h3>
+                        <!-- Accordion -->
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div>
+                                        <span class="accordion-title">Title</span>
                                     </div>
-                                    <div class="accordion-content">
-                                        <div class="color-options">
-                                            <div class="color-circle" style="background-color: #FF5733;"
-                                                onclick="selectColor('#FF5733')"></div>
-                                            <div class="color-circle" style="background-color: #33FF57;"
-                                                onclick="selectColor('#33FF57')"></div>
-                                            <div class="color-circle" style="background-color: #3357FF;"
-                                                onclick="selectColor('#3357FF')"></div>
-                                            <div class="color-circle" style="background-color: #F1C40F;"
-                                                onclick="selectColor('#F1C40F')"></div>
-                                            <div class="color-circle" style="background-color: #E67E22;"
-                                                onclick="selectColor('#E67E22')"></div>
-                                            <div class="color-circle" style="background-color: #2ECC71;"
-                                                onclick="selectColor('#2ECC71')"></div>
-                                            <div class="color-circle" style="background-color: #3498DB;"
-                                                onclick="selectColor('#3498DB')"></div>
-                                            <div class="color-circle" style="background-color: #9B59B6;"
-                                                onclick="selectColor('#9B59B6')"></div>
-                                            <div class="color-circle" style="background-color: #34495E;"
-                                                onclick="selectColor('#34495E')"></div>
-                                            <div class="color-circle" style="background-color: #16A085;"
-                                                onclick="selectColor('#16A085')"></div>
-                                            <div class="color-circle" style="background-color: #F39C12;"
-                                                onclick="selectColor('#F39C12')"></div>
-                                            <div class="color-circle" style="background-color: #D35400;"
-                                                onclick="selectColor('#D35400')"></div>
-                                            <div class="color-circle" style="background-color: #C0392B;"
-                                                onclick="selectColor('#C0392B')"></div>
-                                            <div class="color-circle" style="background-color: #2980B9;"
-                                                onclick="selectColor('#2980B9')"></div>
-                                            <div class="color-circle" style="background-color: #8E44AD;"
-                                                onclick="selectColor('#8E44AD')"></div>
-                                        </div>
+                                    <div class="estate" style="display:flex; align-items:  center;">
+                                        <label class="switch" style="margin: 10px;">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <button class="accordion-toggle">+</button>
                                     </div>
                                 </div>
-
-                                <div class="accordion-item">
-                                    <div class="accordion-header" onclick="toggleAccordion(this)">
-                                        <h3>Fonts</h3>
-                                    </div>
-                                    <div class="accordion-content">
-                                        <div class="font-options">
-                                            <div class="font-option" style="font-family: 'Arial', sans-serif;">Arial
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Verdana', sans-serif;">Verdana
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Courier New', monospace;">
-                                                Courier New</div>
-                                            <div class="font-option" style="font-family: 'Georgia', serif;">Georgia
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Times New Roman', serif;">
-                                                Times New Roman</div>
-                                            <div class="font-option" style="font-family: 'Trebuchet MS', sans-serif;">
-                                                Trebuchet MS</div>
-                                            <div class="font-option" style="font-family: 'Comic Sans MS', cursive;">
-                                                Comic Sans MS</div>
-                                            <div class="font-option" style="font-family: 'Impact', sans-serif;">Impact
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Lucida Console', monospace;">
-                                                Lucida Console</div>
-                                            <div class="font-option" style="font-family: 'Palatino Linotype', serif;">
-                                                Palatino Linotype</div>
-                                            <div class="font-option" style="font-family: 'Tahoma', sans-serif;">Tahoma
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Segoe UI', sans-serif;">Segoe
-                                                UI</div>
-                                            <div class="font-option" style="font-family: 'Baskerville', serif;">
-                                                Baskerville</div>
-                                            <div class="font-option" style="font-family: 'Garamond', serif;">Garamond
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Arial Black', sans-serif;">
-                                                Arial Black</div>
-                                            <div class="font-option" style="font-family: 'Arial Narrow', sans-serif;">
-                                                Arial Narrow</div>
-                                            <div class="font-option" style="font-family: 'Bookman Old Style', serif;">
-                                                Bookman Old Style</div>
-                                            <div class="font-option" style="font-family: 'Futura', sans-serif;">Futura
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Rockwell', serif;">Rockwell
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Optima', sans-serif;">Optima
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Verdana', sans-serif;">Verdana
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Helvetica', sans-serif;">
-                                                Helvetica</div>
-                                            <div class="font-option" style="font-family: 'Frank Ruhl Libre', serif;">
-                                                Frank Ruhl Libre</div>
-                                            <div class="font-option" style="font-family: 'Merriweather', serif;">
-                                                Merriweather</div>
-                                            <div class="font-option" style="font-family: 'Lora', serif;">Lora</div>
-                                            <div class="font-option" style="font-family: 'Roboto', sans-serif;">Roboto
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Montserrat', sans-serif;">
-                                                Montserrat</div>
-                                            <div class="font-option" style="font-family: 'Poppins', sans-serif;">Poppins
-                                            </div>
-                                            <div class="font-option"
-                                                style="font-family: 'Source Sans Pro', sans-serif;">Source Sans Pro
-                                            </div>
-                                            <div class="font-option" style="font-family: 'Raleway', sans-serif;">Raleway
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="accordion-content">
+                                    <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
                                 </div>
                             </div>
-                        </section>
-
-                        <section id="publish" style="display: none;">
-                            <h2>Publish Section</h2>
-                            <p>This is where you publish your work.</p>
-                        </section>
-                    </div>
-                </div>
-
-                <div class="main-3">
-                    <div class="mobile-1">
-                        <div class="container right">
-                            <div class="mobile" id="mobile">
-                                <div class="notch"></div>
-                                <iframe src="/project_2/landingPage_2"></iframe>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div>
+                                        <span class="accordion-title">Description</span>
+                                    </div>
+                                    <div class="estate" style="display:flex; align-items:  center;">
+                                        <label class="switch" style="margin: 10px;">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <button class="accordion-toggle">+</button>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div>
+                                        <span class="accordion-title">Price</span>
+                                    </div>
+                                    <div class="estate" style="display:flex; align-items:  center;">
+                                        <label class="switch" style="margin: 10px;">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <button class="accordion-toggle">+</button>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div>
+                                        <span class="accordion-title">Amenities</span>
+                                    </div>
+                                    <div class="estate" style="display:flex; align-items:  center;">
+                                        <label class="switch" style="margin: 10px;">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <button class="accordion-toggle">+</button>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div>
+                                        <span class="accordion-title">Images</span>
+                                    </div>
+                                    <div class="estate" style="display:flex; align-items:  center;">
+                                        <label class="switch" style="margin: 10px;">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <button class="accordion-toggle">+</button>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div>
+                                        <span class="accordion-title">Geolocation</span>
+                                    </div>
+                                    <div class="estate" style="display:flex; align-items:  center;">
+                                        <label class="switch" style="margin: 10px;">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <button class="accordion-toggle">+</button>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="dropup d-flex justify-content-center mt-5 mb-3">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="btn_add_qr_component"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-plus mr-2"></i> Add Component
+                            </button>
+                            <ul class="dropdown-menu add_qr_component href=" btn_add_qr_component
+                                aria-labelledby="btn_add_qr_component">
+                                <li><a class="dropdown-item" href="#" data-type="text_desc">Heading + Text</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="web_links">Links</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="social_link">Social Links</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="button">Button</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="video">Video</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="images">Images</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="image_gallery">Images + Links</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="pdf_gallery">PDF Gallery</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="custom_fields">Other Details</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="business_hours">Business Hours</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="team">Team</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="testimonial">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="products">Products</a></li>
+                                <li><a class="dropdown-item" href="#" data-type="image_text">Image + Text</a></li>
+                            </ul>
+                        </div>
+                        <style>
+                            /* Accordion container */
+                            /* Accordion container */
+                            .accordion {
+                                overflow: hidden;
+                                margin-bottom: 20px;
+                            }
+
+                            /* Accordion header */
+                            .accordion-header {
+                                background-color: #f5f5f9;
+                                padding: 10px 20px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                cursor: pointer;
+                            }
+
+                            /* Accordion title */
+                            .accordion-title {
+                                font-weight: bold;
+                                margin-right: 10px;
+                            }
+
+                            /* Accordion toggle button */
+                            .accordion-toggle {
+                                font-size: 24px;
+                                background: none;
+                                border: none;
+                                cursor: pointer;
+                            }
+
+                            /* Accordion content */
+                            .accordion-content {
+                                padding: 10px 20px;
+                                max-height: 0;
+                                overflow: hidden;
+                                transition: max-height 0.3s ease-out;
+                                visibility: hidden;
+                                /* Initially hide content */
+                                opacity: 0;
+                                /* Initially hide content */
+                            }
+
+                            /* Show accordion content when active */
+                            .accordion-item.active .accordion-content {
+                                max-height: 200px;
+                                /* Adjust max-height to fit your content */
+                                visibility: visible;
+                                opacity: 1;
+                                transition: max-height 0.3s ease-in, opacity 0.3s ease-in, visibility 0.3s ease-in;
+                            }
+
+                            /* Switch styling */
+                            .switch {
+                                position: relative;
+                                display: inline-block;
+                                width: 40px;
+                                height: 20px;
+                                margin-left: 10px;
+                            }
+
+                            .switch input {
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                            }
+
+                            .slider {
+                                position: absolute;
+                                cursor: pointer;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: #ccc;
+                                transition: .4s;
+                                border-radius: 20px;
+                            }
+
+                            .slider:before {
+                                position: absolute;
+                                content: "";
+                                height: 14px;
+                                width: 14px;
+                                left: 3px;
+                                bottom: 3px;
+                                background-color: white;
+                                transition: .4s;
+                                border-radius: 50%;
+                            }
+
+                            input:checked+.slider {
+                                background-color: #2196F3;
+                            }
+
+                            input:checked+.slider:before {
+                                transform: translateX(20px);
+                            }
+
+                            /* Rounded sliders */
+                            .slider.round {
+                                border-radius: 20px;
+                            }
+
+                            .slider.round:before {
+                                border-radius: 50%;
+                            }
+                        </style>
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const accordionItems = document.querySelectorAll('.accordion-item');
+
+                                accordionItems.forEach(item => {
+                                    const header = item.querySelector('.accordion-header');
+                                    const toggleButton = header.querySelector('.accordion-toggle');
+                                    const content = item.querySelector('.accordion-content');
+
+                                    header.addEventListener('click', function () {
+                                        const isActive = item.classList.toggle('active');
+                                        if (isActive) {
+                                            content.style.maxHeight = content.scrollHeight + 'px';
+                                            toggleButton.textContent = '-';
+                                        } else {
+                                            content.style.maxHeight = '0';
+                                            toggleButton.textContent = '+';
+                                        }
+                                    });
+
+                                    // Initial state check (optional)
+                                    if (item.classList.contains('active')) {
+                                        content.style.maxHeight = content.scrollHeight + 'px';
+                                        toggleButton.textContent = '-';
+                                    }
+                                });
+                            });
+
+                        </script>
+                    </div>
+
+                    <div class="tab-pane fade" id="navs-pills-justified-profile" role="tabpanel">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="accordion-title">Color</span>
+                                </div>
+                                <div class="estate" style="display:flex; align-items:  center;">
+                                    <!-- <label class="switch" style="margin: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label> -->
+                                    <button class="accordion-toggle">+</button>
+                                </div>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="color-options">
+                                    <div class="color-circle" style="background-color: #FF5733;"
+                                        onclick="selectColor('#FF5733')"></div>
+                                    <div class="color-circle" style="background-color: #33FF57;"
+                                        onclick="selectColor('#33FF57')"></div>
+                                    <div class="color-circle" style="background-color: #3357FF;"
+                                        onclick="selectColor('#3357FF')"></div>
+                                    <div class="color-circle" style="background-color: #F1C40F;"
+                                        onclick="selectColor('#F1C40F')"></div>
+                                    <div class="color-circle" style="background-color: #E67E22;"
+                                        onclick="selectColor('#E67E22')"></div>
+                                    <div class="color-circle" style="background-color: #2ECC71;"
+                                        onclick="selectColor('#2ECC71')"></div>
+                                    <div class="color-circle" style="background-color: #3498DB;"
+                                        onclick="selectColor('#3498DB')"></div>
+                                    <div class="color-circle" style="background-color: #9B59B6;"
+                                        onclick="selectColor('#9B59B6')"></div>
+                                    <div class="color-circle" style="background-color: #34495E;"
+                                        onclick="selectColor('#34495E')"></div>
+                                    <div class="color-circle" style="background-color: #16A085;"
+                                        onclick="selectColor('#16A085')"></div>
+                                    <div class="color-circle" style="background-color: #F39C12;"
+                                        onclick="selectColor('#F39C12')"></div>
+                                    <div class="color-circle" style="background-color: #D35400;"
+                                        onclick="selectColor('#D35400')"></div>
+                                    <div class="color-circle" style="background-color: #C0392B;"
+                                        onclick="selectColor('#C0392B')"></div>
+                                    <div class="color-circle" style="background-color: #2980B9;"
+                                        onclick="selectColor('#2980B9')"></div>
+                                    <div class="color-circle" style="background-color: #8E44AD;"
+                                        onclick="selectColor('#8E44AD')"></div>
+                                </div>
+                                <div class="color-choose">
+                                    <div class="color-picker">
+                                        <label for="primary-color">Primary Color:</label>
+                                        <input type="text" id="primary-color" placeholder="#061244">
+
+                                        <label for="secondary-color">Secondary Color:</label>
+                                        <input type="text" id="secondary-color" placeholder="#a07ddaff">
+
+                                        <label for="primary-profile-text-color">Primary Profile Text Color:</label>
+                                        <input type="text" id="primary-profile-text-color" placeholder="#ffffff">
+
+                                        <label for="secondary-profile-text-color">Secondary Profile Text Color:</label>
+                                        <input type="text" id="secondary-profile-text-color" placeholder="#ffffff">
+
+                                        <label for="primary-text-color">Primary Text Color:</label>
+                                        <input type="text" id="primary-text-color" placeholder="#061244">
+
+                                        <label for="secondary-text-color">Secondary Text Color:</label>
+                                        <input type="text" id="secondary-text-color" placeholder="#061244">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <div>
+                                    <span class="accordion-title">Font</span>
+                                </div>
+                                <div class="estate" style="display:flex; align-items:  center;">
+                                    <!-- <label class="switch" style="margin: 10px;">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label> -->
+                                    <button class="accordion-toggle">+</button>
+                                </div>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="font-options">
+                                    <div class="font-option" style="font-family: 'Arial', sans-serif;">Arial
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Verdana', sans-serif;">Verdana
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Courier New', monospace;">
+                                        Courier New</div>
+                                    <div class="font-option" style="font-family: 'Georgia', serif;">Georgia
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Times New Roman', serif;">
+                                        Times New Roman</div>
+                                    <div class="font-option" style="font-family: 'Trebuchet MS', sans-serif;">
+                                        Trebuchet MS</div>
+                                    <div class="font-option" style="font-family: 'Comic Sans MS', cursive;">
+                                        Comic Sans MS</div>
+                                    <div class="font-option" style="font-family: 'Impact', sans-serif;">Impact
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Lucida Console', monospace;">
+                                        Lucida Console</div>
+                                    <div class="font-option" style="font-family: 'Palatino Linotype', serif;">
+                                        Palatino Linotype</div>
+                                    <div class="font-option" style="font-family: 'Tahoma', sans-serif;">Tahoma
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Segoe UI', sans-serif;">Segoe
+                                        UI</div>
+                                    <div class="font-option" style="font-family: 'Baskerville', serif;">
+                                        Baskerville</div>
+                                    <div class="font-option" style="font-family: 'Garamond', serif;">Garamond
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Arial Black', sans-serif;">
+                                        Arial Black</div>
+                                    <div class="font-option" style="font-family: 'Arial Narrow', sans-serif;">
+                                        Arial Narrow</div>
+                                    <div class="font-option" style="font-family: 'Bookman Old Style', serif;">
+                                        Bookman Old Style</div>
+                                    <div class="font-option" style="font-family: 'Futura', sans-serif;">Futura
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Rockwell', serif;">Rockwell
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Optima', sans-serif;">Optima
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Verdana', sans-serif;">Verdana
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Helvetica', sans-serif;">
+                                        Helvetica</div>
+                                    <div class="font-option" style="font-family: 'Frank Ruhl Libre', serif;">
+                                        Frank Ruhl Libre</div>
+                                    <div class="font-option" style="font-family: 'Merriweather', serif;">
+                                        Merriweather</div>
+                                    <div class="font-option" style="font-family: 'Lora', serif;">Lora</div>
+                                    <div class="font-option" style="font-family: 'Roboto', sans-serif;">Roboto
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Montserrat', sans-serif;">
+                                        Montserrat</div>
+                                    <div class="font-option" style="font-family: 'Poppins', sans-serif;">Poppins
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Source Sans Pro', sans-serif;">Source
+                                        Sans
+                                        Pro
+                                    </div>
+                                    <div class="font-option" style="font-family: 'Raleway', sans-serif;">Raleway
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <style>
+                            .color-options {
+                                display: flex;
+                                flex-wrap: wrap;
+                                /* Allow wrapping */
+                                margin-top: 10px;
+                                /* Space above colors */
+                            }
+
+                            .color-circle {
+                                width: 40px;
+                                /* Diameter of circle */
+                                height: 40px;
+                                /* Diameter of circle */
+                                border-radius: 50%;
+                                /* Make it a circle */
+                                margin: 5px;
+                                /* Space between circles */
+                                cursor: pointer;
+                                /* Pointer cursor on hover */
+                                border: 2px solid transparent;
+                                /* Border for selected color */
+                                transition: border 0.3s;
+                                /* Smooth border transition */
+                            }
+
+                            .color-circle:hover {
+                                border: 2px solid #000;
+                                /* Highlight border on hover */
+                            }
+
+
+
+                            .font-options {
+                                margin-top: 10px;
+                                /* Space above fonts */
+                                display: flex;
+                                flex-wrap: wrap;
+                                /* Allow wrapping */
+                            }
+
+                            .font-option {
+                                font-size: 16px;
+                                /* Font size */
+                                padding: 5px 10px;
+                                /* Padding for each font */
+                                margin: 5px;
+                                /* Space between font items */
+                                cursor: pointer;
+                                /* Pointer cursor on hover */
+                                border: 1px solid #ccc;
+                                transition: background-color 0.3s;
+                                /* Transition for hover */
+                            }
+
+                            .font-option:hover {
+                                background-color: #e7e7e7;
+                                /* Light hover effect */
+                            }
+                        </style>
+                    </div>
+                    <div class="tab-pane fade" id="navs-pills-justified-messages" role="tabpanel">
+                        <p>
+                            This is where you publish your work.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="estate-mobile">
+            <div class="container right">
+                <div class="mobile">
+                    <div class="notch"></div>
+                    <iframe src="/project_1/landingPage_1/"></iframe>
+                    <style>
+                        iframe {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    </style>
+                </div>
+            </div>
         </div>
-    </main>
+        <style>
+            .estate-mobile {
+                display: flex;
+                width: 40%;
+                margin: 5px;
+                padding: 20px;
+            }
+
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+            .container .container:nth-child(2) {
+                width: 30%;
+            }
+
+            .container .container {
+                float: left;
+            }
+
+            @media (min-width: 576px) {
+
+                .container,
+                .container-sm {
+                    max-width: 540px;
+                }
+            }
+
+            .container,
+            .container-fluid,
+            .container-lg,
+            .container-md,
+            .container-sm,
+            .container-xl,
+            .container-xxl {
+                --bs-gutter-x: 1.5rem;
+                --bs-gutter-y: 1.5rem;
+                width: 100%;
+                height: auto;
+                padding-right: calc(var(--bs-gutter-x)* .5);
+                padding-left: calc(var(--bs-gutter-x)* .5);
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .notch {
+                height: 30px;
+                width: 100px;
+                background-color: #333;
+                margin: auto;
+                border-radius: 15px;
+                position: relative;
+                z-index: 200;
+                transform: translateY(-17px);
+            }
 
 
-    <footer>
-        <div class="footer">
-            <p>sitesoch</p>
+            .mobile {
+                border: 7.5px solid #333;
+                border-radius: 30px;
+                width: 100%;
+                height: 700px;
+                overflow: hidden;
+                margin-top: 20px;
+            }
+        </style>
+    </div>
+
+    <style>
+        .estate-1 {
+            margin: 0 5%;
+            display: flex; 
+            justify-content: space-between;
+        }
+
+
+        @media (max-width: 999px) {
+            .col-xl-6 {
+                min-width: 100%;
+            }
+
+            .estate-1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+            }
+
+            .estate-mobile{
+                min-width: 70%;
+            }
+        }
+
+        @media (max-width: 600px){
+            .estate-mobile{
+                min-width: 100%;
+                padding: 0%;
+            }
+        }
+    </style>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-primary">
+        <div class="footer-container">
+            <div class="copyright">
+                &copy; 2024 SiteSoch. All rights reserved.
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="#" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="#" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i> Faceook
+                </a>
+            </div>
         </div>
     </footer>
+    <style>
+        /* Footer styles */
+        footer {
+            color: #fff;
+            width: 100%;
+            /* White text */
+            padding: 20px 0;
+            text-align: center;
+            bottom: 0;
+        }
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            /* Center footer */
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            /* Space between social icons */
+            color: #fff;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            /* Adjust size as needed */
+            height: auto;
+        }
+
+        .copyright {
+            flex: 1;
+            /* Take remaining space */
+            text-align: left;
+            padding-left: 20px;
+            /* Space from left */
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+                /* Reduce padding for smaller screens */
+            }
+
+            .navbar .logo img {
+                max-width: 80px;
+                /* Adjust logo size for smaller screens */
+            }
+
+            .navbar nav ul li {
+                margin-right: 10px;
+                /* Reduce margin between navbar items */
+            }
+
+            .user-actions a {
+                margin-left: 10px;
+                /* Reduce margin between user actions */
+            }
+
+            .footer-container {
+                flex-direction: column;
+                /* Stack social icons under copyright text */
+            }
+
+            .social-icons a {
+                margin: 5px;
+                /* Reduce margin for social icons */
+            }
+        }
+    </style>
 
 
 
+
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/dashboards-analytics.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>
